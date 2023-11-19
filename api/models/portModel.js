@@ -10,6 +10,9 @@ var portSchema = new Schema({
    },
    indice: {
       type: String
+   },
+   rentabilidade: {
+      type: Number
    }
 });
 module.exports = mongoose.model('portfolios', portSchema);
