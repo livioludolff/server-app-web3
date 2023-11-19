@@ -12,4 +12,4 @@ var portSchema = new Schema({
       type: String
    }
 });
-module.exports = mongoose.model('Portfolios', portSchema);
+module.exports = mongoose.model('portfolios', portSchema);

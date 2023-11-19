@@ -1,6 +1,6 @@
 'use strict';
 var mongoose = require('mongoose'),
-Portfolio = mongoose.model('Portfolios');
+Portfolio = mongoose.model('portfolios');
 exports.list_all_portfolios = async (req, res) => {
     try {
         const portResultado = await Portfolio.find();
