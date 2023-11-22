@@ -9,6 +9,8 @@ mongoose.Promise = global.Promise;
 mongoose.connect('mongodb+srv://livioludolff:'+dbPass+'@cluster0.p68el3f.mongodb.net/portdb?retryWrites=true&w=majority/portdb');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+const cors = require('cors');
+app.use(cors({origin: '*'}));
 var routes = require('./api/routes/portRoutes');
 routes(app);
 app.listen(port);
