@@ -27,7 +27,7 @@ var portSchema = new Schema({
       type: String
    },
    grafico: {
-      type: String
+      type: Buffer
    },
    composicao: [
       {
